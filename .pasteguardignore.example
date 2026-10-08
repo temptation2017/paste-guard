@@ -1,0 +1,4 @@
+# 放行清单：每行一个值，支持 * ? 通配符；# 开头是注释
+# 复制为 .pasteguardignore 后生效
+*@example.com
+AKIAIOSFODNN7EXAMPLE

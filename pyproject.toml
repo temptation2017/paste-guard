@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paste-guard"
+version = "0.1.0"
+description = "把文本贴给 AI 之前，先扫描密钥与个人信息（含身份证、手机号、车牌等中文场景），并可一键脱敏。"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+keywords = ["secrets", "pii", "redact", "llm", "privacy", "pre-commit"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: Console",
+    "Topic :: Security",
+]
+
+[project.urls]
+Homepage = "https://github.com/temptation2017/paste-guard"
+
+[project.scripts]
+paste-guard = "paste_guard:main"
+
+[tool.setuptools]
+py-modules = ["paste_guard"]

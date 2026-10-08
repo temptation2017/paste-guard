@@ -1,0 +1,5 @@
+- id: paste-guard
+  name: paste-guard（扫描密钥与个人信息）
+  entry: paste-guard scan
+  language: python
+  types: [text]
